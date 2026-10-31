@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+"""
+localcode - Local AI Coding Agent
+Works like Claude Code but runs 100% on your machine.
+Usage: localcode [prompt] or just: localcode (interactive mode)
+"""
+import sys
+import os
+
+# Add parent dir to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from src.main import main
+
+if __name__ == '__main__':
+    main()
